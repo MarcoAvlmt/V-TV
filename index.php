@@ -25,7 +25,7 @@
         display: flex;
         justify-content: space-between; /* Alineamos los elementos a los extremos */
         align-items: center; /* Centramos los elementos verticalmente */
-        height: calc(50vh - 10px); /* Ajustamos la altura restando el alto del navbar */
+        height: calc(30vh - 10px); /* Ajustamos la altura restando el alto del navbar */
         padding-top: 10px; /* Añadimos un poco de espacio desde la parte superior */
     }
 

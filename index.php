@@ -1,6 +1,7 @@
 <?php include("Templates/header.php") ?>
 <!-- ESTE ES EL INICIO DE LA APP -->
 <div class="container"> <!-- Agregamos un contenedor para el contenido de la página -->
+    <div class="welcome-message">Bienvenido</div>
     <div class="clock">
         <div class="hour-hand"></div>
         <div class="minute-hand"></div>
@@ -19,10 +20,16 @@
 
     .container {
         display: flex;
-        justify-content: center;
-        align-items: flex-start; /* Alineamos al inicio para estar cerca del navbar */
+        justify-content: space-between; /* Alineamos los elementos a los extremos */
+        align-items: center; /* Centramos los elementos verticalmente */
         height: calc(10vh - 10px); /* Ajustamos la altura restando el alto del navbar */
         padding-top: 10px; /* Añadimos un poco de espacio desde la parte superior */
+    }
+
+    .welcome-message {
+        font-size: 24px; /* Tamaño del texto de bienvenida */
+        color: #333; /* Color del texto */
+        padding-left: 20px; /* Espaciado desde la izquierda */
     }
 
     .clock {
@@ -31,6 +38,7 @@
         height: 200px;
         border: 10px solid #333;
         border-radius: 50%;
+        margin-right: 20px; /* Añadimos margen derecho */
     }
 
     .hour-hand,

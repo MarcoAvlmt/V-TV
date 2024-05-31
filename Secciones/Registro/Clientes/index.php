@@ -1,2 +1,2 @@
-<?php include("Templates/header.php") ?>
-<?php include("templates/footer.php") ?>
+<?php include("../../../Templates/header.php") ?>
+<?php include("../../../Templates/footer.php") ?>

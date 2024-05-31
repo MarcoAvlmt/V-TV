@@ -21,7 +21,7 @@
     </style>
     <nav class="navbar navbar-expand-lg bg-body-tertiary ">
         <div class="container-fluid">
-            <img src="Images/Icon.png" alt="Icono" width="50" height="30">
+            <img src="<?php echo $url_base; ?>/Images/Icon.png" alt="Icono" width="50" height="30">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>

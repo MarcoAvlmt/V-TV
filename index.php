@@ -1,7 +1,11 @@
 <?php include("Templates/header.php") ?>
 <!-- ESTE ES EL INICIO DE LA APP -->
 <div class="container"> <!-- Agregamos un contenedor para el contenido de la página -->
-    <div class="MensajeBienvenida">Bienvenido a V+TV</div>
+    <div class="MensajeBienvenida">
+        <img src="<?php echo $url_base; ?>/Images/Icon.png" alt="Icono" width="250" height="180">
+        </br>
+        Bienvenido a V+TV
+    </div>
     <div class="clocks-container">
         <div class="clock">
             <div class="hour-hand"></div>
@@ -23,23 +27,31 @@
 
     .container {
         display: flex;
-        justify-content: space-between; /* Alineamos los elementos a los extremos */
-        align-items: center; /* Centramos los elementos verticalmente */
-        height: calc(30vh - 10px); /* Ajustamos la altura restando el alto del navbar */
-        padding-top: 10px; /* Añadimos un poco de espacio desde la parte superior */
+        justify-content: space-between;
+        /* Alineamos los elementos a los extremos */
+        align-items: center;
+        /* Centramos los elementos verticalmente */
+        height: calc(30vh - 10px);
+        /* Ajustamos la altura restando el alto del navbar */
+        padding-top: 10px;
+        /* Añadimos un poco de espacio desde la parte superior */
     }
 
     .MensajeBienvenida {
-        font-size: 30px; /* Tamaño del texto de bienvenida */
-        color: #333; /* Color del texto */
-        padding-left: 20px; /* Espaciado desde la izquierda */
+        font-size: 30px;
+        /* Tamaño del texto de bienvenida */
+        color: #333;
+        /* Color del texto */
+        padding-left: 20px;
+        /* Espaciado desde la izquierda */
     }
 
     .clocks-container {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-right: 20px; /* Añadimos margen derecho */
+        margin-right: 20px;
+        /* Añadimos margen derecho */
     }
 
     .clock {
@@ -48,7 +60,8 @@
         height: 200px;
         border: 10px solid #333;
         border-radius: 50%;
-        margin-bottom: 20px; /* Espacio debajo del reloj */
+        margin-bottom: 20px;
+        /* Espacio debajo del reloj */
     }
 
     .hour-hand,
@@ -95,8 +108,10 @@
     }
 
     .digital-clock {
-        font-size: 24px; /* Tamaño del texto del reloj digital */
-        color: #333; /* Color del texto */
+        font-size: 24px;
+        /* Tamaño del texto del reloj digital */
+        color: #333;
+        /* Color del texto */
     }
 </style>
 
@@ -123,10 +138,10 @@
         const formattedHours = hours < 10 ? `0${hours}` : hours;
         const formattedMinutes = minutes < 10 ? `0${minutes}` : minutes;
         const formattedSeconds = seconds < 10 ? `0${seconds}` : seconds;
-        
+
         digitalClock.textContent = `${formattedHours}:${formattedMinutes}:${formattedSeconds}`;
     }
-    
+
     setInterval(setClock, 1000);
     setClock();
 </script>

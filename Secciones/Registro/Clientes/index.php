@@ -9,35 +9,38 @@
                 <table class="table table-striped">
                     <thead>
                         <tr>
-                            <th>#</th>
-                            <th>Nombre</th>
-                            <th>Apellido</th>
-                            <th>Correo electrónico</th>
+                            <th>id</th>
+                            <th>Nombre y apellidos</th>
+                            <th>Correo</th>
+                            <th>Telefono</th>
+                            <th>Corte</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <th scope="row">1</th>
-                            <td>Juan</td>
-                            <td>Pérez</td>
+                            <td>Juan Pérez</td>
                             <td>juan.perez@example.com</td>
+                            <td>9531454698</td>
+                            <td>03/02/24</td>
                         </tr>
                         <tr>
                             <th scope="row">2</th>
-                            <td>María</td>
-                            <td>Gómez</td>
+                            <td>María Gómez</td>
                             <td>maria.gomez@example.com</td>
+                            <td>9536685698</td>
+                            <td>03/02/24</td>
                         </tr>
                         <!-- Más filas según sea necesario -->
                     </tbody>
                 </table>
             </div>
         </div>
-        <!-- Contenedor para el calendario CALENDARIOS -->
+        <!-- Contenedor para el recordatorio -->
         <div class="col-3">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Calendario</h5>
+                    <h5 class="card-title">Fechas Proximas</h5>
                     <div id="calendar">
                         <!-- Aquí podrías insertar un calendario interactivo utilizando una librería de JavaScript -->
                     </div>

@@ -114,11 +114,3 @@
         </div>
     </nav>
     <main class="container">
-        <!-- Contenido principal -->
-    </main>
-</body>
-
-</html>
-</div>
-</nav>
-<main class="container">
